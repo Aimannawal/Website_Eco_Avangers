@@ -198,7 +198,8 @@ function initMobileMenu() {
   if (!toggleBtn || !mobileMenu) return;
 
   toggleBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    toggleBtn.setAttribute('aria-expanded', !isHidden);
   });
 
   links.forEach(link => {
