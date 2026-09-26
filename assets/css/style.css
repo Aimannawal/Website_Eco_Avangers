@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  --color-orange-50: #FFF7ED;
+  --color-orange-100: #FFEDD5;
+  --color-orange-500: #FF7A00;
+  --color-orange-600: #EA580C;
+  --color-orange-700: #C2410C;
+  --color-dark: #1E293B;
+  --color-light-bg: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #FFFFFF;
+  color: #1E293B;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #FFEDD5;
+  color: #EA580C;
+}
+
+/* Sharp, crystal clear gaming font */
+.font-pixel, .font-game {
+  font-family: 'Chakra Petch', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+}
+
+/* Elegant Pixel Border & Shadow Utility */
+.pixel-box {
+  background: #FFFFFF;
+  border: 2px solid #1E293B;
+  box-shadow: 4px 4px 0px #FF7A00;
+  transition: all 0.2s ease;
+}
+
+.pixel-box:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #FF7A00;
+}
+
+.pixel-btn-orange {
+  background: #FF7A00;
+  color: #FFFFFF;
+  border: 2px solid #1E293B;
+  box-shadow: 4px 4px 0px #1E293B;
+  transition: all 0.15s ease;
+}
+
+.pixel-btn-orange:hover {
+  background: #EA580C;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #1E293B;
+}
+
+.pixel-btn-orange:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1E293B;
+}
+
+.pixel-btn-white {
+  background: #FFFFFF;
+  color: #1E293B;
+  border: 2px solid #1E293B;
+  box-shadow: 4px 4px 0px #FF7A00;
+  transition: all 0.15s ease;
+}
+
+.pixel-btn-white:hover {
+  background: #FFF7ED;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #FF7A00;
+}
+
+.pixel-btn-white:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #FF7A00;
+}
+
+/* Crisp Clean Badge */
+.pixel-badge {
+  border: 2px solid #1E293B;
+  box-shadow: 2px 2px 0px #FF7A00;
+}
+
+/* Audio Player Equalizer in Orange */
+.audio-bar {
+  width: 3px;
+  background: #FF7A00;
+  border-radius: 2px;
+  animation: waveBar 1.2s ease-in-out infinite;
+}
+
+@keyframes waveBar {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.audio-bar:nth-child(1) { animation-delay: 0.1s; height: 8px; }
+.audio-bar:nth-child(2) { animation-delay: 0.3s; height: 14px; }
+.audio-bar:nth-child(3) { animation-delay: 0.2s; height: 10px; }
+.audio-bar:nth-child(4) { animation-delay: 0.4s; height: 16px; }
+
+.audio-paused .audio-bar {
+  animation: none !important;
+  height: 4px !important;
+  opacity: 0.4;
+}
+
+/* Subtle background dot grid */
+.bg-grid-dots {
+  background-image: radial-gradient(#E2E8F0 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Floating animation */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Pixel Art Image Rendering */
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Clean Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7A00;
+}
+
+/* Modal styles */
+.modal-backdrop {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+}

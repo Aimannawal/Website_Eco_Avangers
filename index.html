@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Eco Avengers APK — Game Board Game Edukasi Aksi Iklim Android</title>
+  <meta name="description" content="Unduh berkas APK resmi Eco Avengers (v1.0.0). Game board game strategi edukasi iklim 3-5 pemain di Android. Bersatu menstabilkan krisis lingkungan di 5 benua!">
+  <meta name="keywords" content="Eco Avengers, APK Eco Avengers, download game board game android, board game iklim, edukasi lingkungan, flutter board game, game kooperatif android">
+  <meta name="author" content="Aiman Wafi'i An Nawal & Tim Eco Avengers">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="index.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Eco Avengers">
+  <meta property="og:title" content="Eco Avengers APK — Board Game Edukasi Iklim Android">
+  <meta property="og:description" content="Download APK resmi Eco Avengers. Game strategi kooperatif krisis iklim 3-5 pemain untuk smartphone Android!">
+  <meta property="og:image" content="assets/images/logo/logo-banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Eco Avengers Board Game Logo Banner">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eco Avengers APK — Board Game Edukasi Iklim Android">
+  <meta name="twitter:description" content="Unduh berkas APK resmi Eco Avengers (v1.0.0). Game board game kooperatif edukasi iklim untuk Android!">
+  <meta name="twitter:image" content="assets/images/logo/logo-banner.png">
+
+  <!-- Mobile App & Theme -->
+  <meta name="theme-color" content="#FF7A00">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Eco Avengers">
+  <link rel="icon" type="image/png" href="assets/images/tokens/move-icon.png">
+  <link rel="apple-touch-icon" href="assets/images/tokens/move-icon.png">
+
+  <!-- Schema.org JSON-LD Structured Data for Game / MobileApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Eco Avengers",
+    "operatingSystem": "Android 8.0+",
+    "applicationCategory": "GameApplication",
+    "gameGenre": ["Board Game", "Educational", "Cooperative Strategy"],
+    "softwareVersion": "1.0.0",
+    "fileSize": "301MB",
+    "fileFormat": "application/vnd.android.package-archive",
+    "downloadUrl": "download/Eco-Avengers-v1.0.apk",
+    "description": "Game board game kooperatif edukatif 3-5 pemain bertema aksi iklim dan krisis lingkungan global untuk Android.",
+    "author": {
+      "@type": "Person",
+      "name": "Aiman Wafi'i An Nawal"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IDR"
+    }
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            theme: {
+              orange: '#FF7A00',
+              'orange-dark': '#EA580C',
+              'orange-light': '#FFF7ED',
+              'orange-border': '#FED7AA',
+              dark: '#1E293B',
+              slate: '#475569',
+              light: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            game: ['"Chakra Petch"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-slate-800 antialiased relative selection:bg-orange-100 selection:text-orange-600 bg-grid-dots">
+
+  <!-- Top Announcement Bar (Orange & White) -->
+  <div class="bg-orange-500 text-white py-2 px-4 text-xs font-bold text-center border-b-2 border-slate-900 flex items-center justify-center gap-3">
+    <span class="bg-white text-orange-600 px-2 py-0.5 rounded text-[11px] font-game font-bold tracking-wider">
+      VERSI 1.0.0
+    </span>
+    <span>🎮 APK Resmi Eco Avengers Siap Diunduh untuk Android!</span>
+    <a href="#download" class="underline underline-offset-2 hover:text-orange-100 font-extrabold ml-1 hidden sm:inline">
+      Ayo Download Sekarang &darr;
+    </a>
+  </div>
+
+  <!-- Header / Navigation -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-slate-900 transition-all duration-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/images/logo/logo-banner.png" alt="Eco Avengers Logo" class="h-10 sm:h-12 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-700">
+        <a href="#overview" class="hover:text-orange-600 transition">Tentang Game</a>
+        <a href="#heroes" class="hover:text-orange-600 transition">5 Karakter</a>
+        <a href="#gameplay" class="hover:text-orange-600 transition">Gameplay</a>
+        <a href="https://canva.link/howtoplayecoavengers" target="_blank" rel="noopener noreferrer" class="hover:text-orange-600 transition flex items-center gap-1.5 text-orange-600 font-extrabold">
+          <span>How to Play</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Action Buttons: Download APK -->
+      <div class="flex items-center gap-3">
+        <!-- Download APK Button -->
+        <a href="#download" class="trigger-download pixel-btn-orange px-4 sm:px-5 py-2 rounded-lg font-game font-bold text-xs sm:text-sm tracking-wider flex items-center gap-2">
+          <i class="fa-brands fa-android text-base"></i>
+          <span>Download APK</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuToggle" type="button" class="md:hidden p-2 rounded-lg text-slate-800 hover:bg-orange-50 border-2 border-slate-900">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b-2 border-slate-900 px-4 py-4 space-y-2 text-sm font-bold text-slate-800">
+      <a href="#overview" class="mobile-nav-link block p-2 hover:bg-orange-50 rounded">Tentang Game</a>
+      <a href="#heroes" class="mobile-nav-link block p-2 hover:bg-orange-50 rounded">5 Karakter Spesialis</a>
+      <a href="#gameplay" class="mobile-nav-link block p-2 hover:bg-orange-50 rounded">Gameplay & Token</a>
+      <a href="https://canva.link/howtoplayecoavengers" target="_blank" rel="noopener noreferrer" class="mobile-nav-link block p-2 text-orange-600 hover:bg-orange-50 rounded font-extrabold flex items-center justify-between">
+        <span>How to Play (Canva)</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+      </a>
+      <a href="#download" class="mobile-nav-link block p-2 text-orange-600 hover:bg-orange-50 rounded">Unduh APK Android</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="py-12 sm:py-20 border-b-2 border-slate-900 bg-gradient-to-b from-white via-orange-50/50 to-white relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- Left Column: Title & Ayo Download CTA -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-game font-bold pixel-badge">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
+            BOARDGAME EDUKASI IKLIM • ANDROID RELEASE
+          </div>
+
+          <!-- Main Title (Readable Chakra Petch & Jakarta Sans) -->
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-tight">
+            Selamatkan Bumi, Satu Putaran Dadu & <span class="text-orange-500 font-game">Strategi Tim!</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Mainkan board game kooperatif 3-5 pemain di smartphone Android-mu! Bersama teman-teman, kelola token energi, taklukkan krisis iklim lintas benua, dan amankan masa depan bumi.
+          </p>
+
+          <!-- HERO CTA: Ayo Download APK Group -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4" id="download">
+            
+            <!-- Direct Download Button -->
+            <a href="download/Eco-Avengers-v1.0.apk" download="Eco-Avengers-v1.0.apk" class="trigger-download pixel-btn-orange w-full sm:w-auto px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 text-center">
+              <i class="fa-brands fa-android text-2xl"></i>
+              <div class="text-left">
+                <div class="text-[10px] font-game text-orange-100 uppercase tracking-widest leading-none">Ayo Download</div>
+                <div class="text-lg font-extrabold font-game text-white leading-tight">ECO AVENGERS APK</div>
+              </div>
+              <span class="ml-2 px-2 py-0.5 rounded bg-black/20 text-xs font-bold font-mono">301 MB</span>
+            </a>
+
+            <!-- Secondary Button: How to Play Canva -->
+            <a href="https://canva.link/howtoplayecoavengers" target="_blank" rel="noopener noreferrer" class="pixel-btn-white w-full sm:w-auto px-6 py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <i class="fa-solid fa-book-open text-orange-500"></i>
+              <span>Panduan How to Play</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+            </a>
+
+          </div>
+
+          <!-- Specs details -->
+          <div class="pt-1 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-500">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-orange-500"></i> Android 8.0 Ke Atas</span>
+            <span>•</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-orange-500"></i> Bebas Iklan & Aman</span>
+            <span>•</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-orange-500"></i> Co-op Realtime</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Pixel Assets Showcase -->
+        <div class="lg:col-span-5 flex justify-center">
+          
+          <div class="pixel-box rounded-2xl p-6 sm:p-8 max-w-md w-full bg-white relative">
+            
+            <!-- Pixel Banner Logo -->
+            <div class="text-center pb-4 border-b-2 border-slate-100">
+              <img src="assets/images/logo/logo-banner.png" alt="Eco Avengers Logo" class="max-h-24 sm:max-h-28 w-auto mx-auto object-contain animate-float">
+            </div>
+
+            <!-- Pixel Characters Standing Together -->
+            <div class="py-6 flex items-end justify-center gap-3">
+              <div class="text-center group">
+                <img src="assets/images/pixel/char-hijab.png" alt="Hero Hijab" class="h-28 sm:h-32 w-auto object-contain pixelated transform group-hover:scale-110 transition duration-200">
+              </div>
+              <div class="text-center group">
+                <img src="assets/images/pixel/char-blue-suit.png" alt="Hero Blue Suit" class="h-32 sm:h-36 w-auto object-contain pixelated transform group-hover:scale-110 transition duration-200">
+              </div>
+              <div class="text-center group">
+                <img src="assets/images/pixel/char-white-shirt.png" alt="Hero White Shirt" class="h-28 sm:h-32 w-auto object-contain pixelated transform group-hover:scale-110 transition duration-200">
+              </div>
+            </div>
+
+            <!-- Bottom Tokens Pill -->
+            <div class="pt-4 border-t-2 border-slate-100 flex items-center justify-around text-center">
+              <div class="flex items-center gap-1.5">
+                <img src="assets/images/tokens/master-energy.png" alt="Energy" class="w-6 h-6 object-contain">
+                <span class="text-xs font-bold text-slate-700">Energy</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <img src="assets/images/tokens/sustainable.png" alt="Peace" class="w-6 h-6 object-contain">
+                <span class="text-xs font-bold text-slate-700">Peace</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <img src="assets/images/tokens/crisis.png" alt="Crisis" class="w-6 h-6 object-contain">
+                <span class="text-xs font-bold text-slate-700">Crisis</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUICK HIGHLIGHTS (4 Clean White & Orange Cards) -->
+  <section class="py-12 bg-orange-50 border-b-2 border-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        
+        <div class="pixel-box rounded-xl p-4 bg-white text-center">
+          <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mx-auto mb-2 text-lg font-bold">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="font-game font-bold text-sm text-slate-900">3-5 PEMAIN</div>
+          <div class="text-xs text-slate-500 mt-1">Multiplayer Realtime</div>
+        </div>
+
+        <div class="pixel-box rounded-xl p-4 bg-white text-center">
+          <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mx-auto mb-2 text-lg font-bold">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <div class="font-game font-bold text-sm text-slate-900">5 BENUA</div>
+          <div class="text-xs text-slate-500 mt-1">Tantangan Krisis Nyata</div>
+        </div>
+
+        <div class="pixel-box rounded-xl p-4 bg-white text-center">
+          <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mx-auto mb-2 text-lg font-bold">
+            <i class="fa-solid fa-dice"></i>
+          </div>
+          <div class="font-game font-bold text-sm text-slate-900">DADU & TOKEN</div>
+          <div class="text-xs text-slate-500 mt-1">Strategi & Kartu Aksi</div>
+        </div>
+
+        <div class="pixel-box rounded-xl p-4 bg-white text-center">
+          <div class="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mx-auto mb-2 text-lg font-bold">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="font-game font-bold text-sm text-slate-900">LEADERBOARD</div>
+          <div class="text-xs text-slate-500 mt-1">Poin & Lencana Ahli</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OVERVIEW & STORY SECTION -->
+  <section id="overview" class="py-16 sm:py-24 border-b-2 border-slate-900 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-game font-bold text-orange-600 uppercase tracking-widest">TENTANG PERMAINAN</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+          Bukan Kompetisi, Tapi Kerja Sama Menyelamatkan Dunia
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
+          Di Eco Avengers, jika salah satu benua kewalahan oleh krisis iklim ekstrem, semua pemain dinyatakan kalah. Hanya dengan koordinasi dan alokasi sumber daya yang tepat bumi dapat diselamatkan!
+        </p>
+      </div>
+
+      <!-- 3 Feature Pillars -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="pixel-box rounded-2xl p-6 bg-white flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl font-bold shadow-md">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3 class="font-game font-bold text-lg text-slate-900">Aturan Sederhana & Seru</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Pemain bergiliran melempar dadu, mengambil kartu aksi, dan menempatkan token sumber daya di benua yang sedang kritis.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-xs font-bold text-orange-600 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check"></i> Mudah dipahami semua kalangan
+          </div>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-6 bg-white flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl font-bold shadow-md">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h3 class="font-game font-bold text-lg text-slate-900">Multiplayer Online Room</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Cukup buat ruangan, dapatkan kode unik 6-digit, dan ajak teman-temanmu bergabung dari mana saja secara real-time.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-xs font-bold text-orange-600 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check"></i> Sinkronisasi real-time instan
+          </div>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-6 bg-white flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl font-bold shadow-md">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="font-game font-bold text-lg text-slate-900">Edukasi Iklim Riil</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Mengenalkan konsep energi terbarukan, reboisasi, restorasi lahan gambut, diplomasi global, dan aksi mitigasi bencana iklim.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-xs font-bold text-orange-600 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check"></i> Belajar sambil bermain game
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THE 5 CHARACTERS SECTION (Clean & Readable) -->
+  <section id="heroes" class="py-16 sm:py-24 border-b-2 border-slate-900 bg-orange-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-game font-bold text-orange-600 uppercase tracking-widest">PILIHAN KARAKTER</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+          5 Spesialis Pejuang Iklim
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Pilih peran yang cocok dengan strategi tim. Setiap karakter memiliki keahlian khusus!
+        </p>
+      </div>
+
+      <!-- Character Tab Buttons -->
+      <div class="flex items-center justify-center flex-wrap gap-2.5 mb-10">
+        <button type="button" data-char="energy-scientist" class="char-btn px-4 py-2.5 rounded-lg border-2 border-slate-900 bg-orange-500 text-white font-game font-bold text-xs sm:text-sm shadow-[3px_3px_0px_#1E293B] transition">
+          ⚡ Energy Scientist
+        </button>
+        <button type="button" data-char="ecologist" class="char-btn px-4 py-2.5 rounded-lg border-2 border-slate-900 bg-white text-slate-800 font-game font-bold text-xs sm:text-sm hover:bg-orange-50 transition">
+          🌿 Ecologist
+        </button>
+        <button type="button" data-char="environmental-activist" class="char-btn px-4 py-2.5 rounded-lg border-2 border-slate-900 bg-white text-slate-800 font-game font-bold text-xs sm:text-sm hover:bg-orange-50 transition">
+          📢 Environmental Activist
+        </button>
+        <button type="button" data-char="policymaker" class="char-btn px-4 py-2.5 rounded-lg border-2 border-slate-900 bg-white text-slate-800 font-game font-bold text-xs sm:text-sm hover:bg-orange-50 transition">
+          🏛️ Policymaker
+        </button>
+        <button type="button" data-char="climate-engineer" class="char-btn px-4 py-2.5 rounded-lg border-2 border-slate-900 bg-white text-slate-800 font-game font-bold text-xs sm:text-sm hover:bg-orange-50 transition">
+          ⚙️ Climate Engineer
+        </button>
+      </div>
+
+      <!-- Character Card Showcase Box -->
+      <div class="pixel-box rounded-2xl p-6 sm:p-10 bg-white max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Character Card Visual -->
+          <div class="md:col-span-5 flex flex-col items-center">
+            <div class="w-64 rounded-xl overflow-hidden border-2 border-slate-900 shadow-md">
+              <img id="charSheetImg" src="assets/images/characters/energy-scientist.png" alt="Character Sheet" class="w-full h-auto object-cover">
+            </div>
+            <span class="text-[11px] font-mono font-bold text-slate-500 mt-2">Lembar Karakter Resmi</span>
+          </div>
+
+          <!-- Character Details -->
+          <div class="md:col-span-7 space-y-4">
+            
+            <div class="flex items-center gap-2">
+              <span id="charBadge" class="px-2.5 py-0.5 rounded bg-orange-100 text-orange-700 text-xs font-game font-bold border border-orange-300">
+                Energy Science
+              </span>
+              <span class="text-xs text-slate-400 font-mono">• Spesialisasi</span>
+            </div>
+
+            <div>
+              <h3 id="charName" class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-game">
+                Energy Scientist
+              </h3>
+              <p id="charTitle" class="text-sm font-bold text-orange-600 mt-0.5">
+                Spesialis Transisi Energi
+              </p>
+            </div>
+
+            <!-- Perk Box -->
+            <div class="p-3.5 rounded-xl bg-orange-50 border-2 border-orange-200">
+              <div class="text-[11px] font-game font-bold text-orange-700 uppercase">Keahlian Khusus:</div>
+              <p id="charAbility" class="text-xs sm:text-sm font-bold text-slate-800 mt-0.5">
+                Mengurangi tingkat kesulitan krisis energi sebesar 1 poin di seluruh wilayah.
+              </p>
+            </div>
+
+            <p id="charDesc" class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Pakar teknologi terbarukan yang memimpin riset fusi ramah lingkungan dan baterai skala besar untuk mempercepat dekarbonisasi global.
+            </p>
+
+            <blockquote class="border-l-4 border-orange-500 pl-3 italic text-xs text-slate-600">
+              <span id="charQuote">"Energi bersih adalah kunci utama kelangsungan hidup bumi."</span>
+            </blockquote>
+
+            <!-- Stat Bars -->
+            <div class="space-y-2 pt-2 text-xs">
+              <div>
+                <div class="flex justify-between mb-1 text-[11px] font-bold text-slate-700">
+                  <span>Riset & Sains</span>
+                  <span id="statResearch" class="text-orange-600 font-mono">95</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 border border-slate-300 overflow-hidden">
+                  <div class="h-full bg-orange-500 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1 text-[11px] font-bold text-slate-700">
+                  <span>Diplomasi Tim</span>
+                  <span id="statDiplomacy" class="text-orange-600 font-mono">70</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 border border-slate-300 overflow-hidden">
+                  <div class="h-full bg-orange-500 rounded-full" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1 text-[11px] font-bold text-slate-700">
+                  <span>Mobilitas Langkah</span>
+                  <span id="statMobility" class="text-orange-600 font-mono">65</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 border border-slate-300 overflow-hidden">
+                  <div class="h-full bg-orange-500 rounded-full" style="width: 65%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1 text-[11px] font-bold text-slate-700">
+                  <span>Manajemen Krisis</span>
+                  <span id="statCrisis" class="text-orange-600 font-mono">85</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-100 border border-slate-300 overflow-hidden">
+                  <div class="h-full bg-orange-500 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GAMEPLAY & TOKEN MECHANICS -->
+  <section id="gameplay" class="py-16 sm:py-24 border-b-2 border-slate-900 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-game font-bold text-orange-600 uppercase tracking-widest">SISTEM GAMEPLAY</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+          Mekanisme Token, Kartu Aksi & Dadu
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Kuasai alokasi token untuk menekan penyebaran kartu krisis lingkungan di seluruh dunia.
+        </p>
+      </div>
+
+      <!-- 4 Token Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <div class="pixel-box rounded-2xl p-5 bg-white text-center flex flex-col justify-between">
+          <div class="space-y-3">
+            <img src="assets/images/tokens/master-energy.png" alt="Energy Token" class="w-16 h-16 mx-auto object-contain">
+            <h3 class="font-game font-bold text-base text-slate-900">Energy Token</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Digunakan untuk mengeksekusi kartu aksi mitigasi iklim dan menetralkan krisis energi wilayah.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-orange-600 font-mono">
+            Modal Awal: 4 - 8 Poin
+          </div>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-5 bg-white text-center flex flex-col justify-between">
+          <div class="space-y-3">
+            <img src="assets/images/tokens/sustainable.png" alt="Peace Token" class="w-16 h-16 mx-auto object-contain">
+            <h3 class="font-game font-bold text-base text-slate-900">Peace Token</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Mewakili harmoni diplomasi global dan ketertiban masyarakat dalam merespons bencana lingkungan.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-orange-600 font-mono">
+            Modal Awal: 5 Poin Tetap
+          </div>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-5 bg-white text-center flex flex-col justify-between">
+          <div class="space-y-3">
+            <img src="assets/images/tokens/crisis.png" alt="Crisis Token" class="w-16 h-16 mx-auto object-contain">
+            <h3 class="font-game font-bold text-base text-slate-900">Crisis Token</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Indikator bahaya krisis. Jangan biarkan jumlah token ini meluap melewati ambang batas toleransi!
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-red-600 font-mono">
+            Batas Bahaya: 2 - 4 Token
+          </div>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-5 bg-white text-center flex flex-col justify-between">
+          <div class="space-y-3">
+            <img src="assets/images/tokens/move-icon.png" alt="Move Token" class="w-16 h-16 mx-auto object-contain">
+            <h3 class="font-game font-bold text-base text-slate-900">Move Token</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Lencana pergerakan bidak antar benua dan peningkatan gelar keahlian saat misi berhasil.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-orange-600 font-mono">
+            Dapat Naik Level 1-3
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Cards & Crisis Cards Showcase -->
+      <div class="pixel-box rounded-2xl p-6 sm:p-8 bg-orange-50/50">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 space-y-3">
+            <span class="text-xs font-game font-bold text-orange-600 uppercase">KARTU PERMAINAN</span>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 font-game">
+              Kartu Aksi & Krisis Regional
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Pemain akan menarik <strong>Action Cards</strong> yang memberikan buff taktis seperti penambahan energi, pergeseran krisis, atau bantuan dadu untuk anggota tim.
+            </p>
+            <div class="flex items-center gap-3 text-xs font-bold text-slate-700 pt-2">
+              <span><i class="fa-solid fa-layer-group text-orange-500"></i> 10+ Variasi Kartu</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-globe text-orange-500"></i> Isu Iklim Riil</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="rounded-lg overflow-hidden border-2 border-slate-900 shadow-sm hover:-translate-y-1 transition duration-150">
+              <img src="assets/images/cards/action-1.png" alt="Action Card 1" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden border-2 border-slate-900 shadow-sm hover:-translate-y-1 transition duration-150">
+              <img src="assets/images/cards/action-2.png" alt="Action Card 2" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden border-2 border-slate-900 shadow-sm hover:-translate-y-1 transition duration-150">
+              <img src="assets/images/cards/action-3.png" alt="Action Card 3" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden border-2 border-slate-900 shadow-sm hover:-translate-y-1 transition duration-150">
+              <img src="assets/images/cards/crisis-asia.png" alt="Crisis Card Asia" class="w-full h-auto object-cover">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW TO PLAY CANVA SECTION -->
+  <section class="py-16 sm:py-24 border-b-2 border-slate-900 bg-orange-50/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="pixel-box rounded-3xl p-8 sm:p-12 bg-white text-center space-y-6 relative overflow-hidden">
+        
+        <div class="w-16 h-16 rounded-2xl bg-orange-100 text-orange-600 border-2 border-slate-900 flex items-center justify-center mx-auto text-2xl font-bold shadow-md">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <div>
+          <span class="text-xs font-game font-bold text-orange-600 uppercase tracking-widest">PANDUAN RESMI</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+            Buku Panduan Cara Bermain Lengkap (How to Play)
+          </h2>
+          <p class="text-sm text-slate-600 max-w-xl mx-auto mt-3 leading-relaxed">
+            Ingin memahami seluruh alur giliran, aturan dadu, dan panduan lengkap langkah demi langkah? Buka dokumen interaktif panduan resmi Eco Avengers:
+          </p>
+        </div>
+
+        <!-- Canva Direct Button -->
+        <div class="pt-2">
+          <a href="https://canva.link/howtoplayecoavengers" target="_blank" rel="noopener noreferrer" class="pixel-btn-orange inline-flex items-center gap-3 px-8 py-4 rounded-xl font-game font-bold text-sm sm:text-base">
+            <span>BUKA PANDUAN HOW TO PLAY (CANVA)</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+          </a>
+        </div>
+
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-6 text-xs font-bold text-slate-500">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-orange-500"></i> Alur Giliran Bermain</span>
+          <span>•</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-orange-500"></i> Setup Papan Permainan</span>
+          <span>•</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-orange-500"></i> Syarat Menang & Kalah</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW TO INSTALL GUIDE (3 Easy Steps) -->
+  <section class="py-16 sm:py-24 border-b-2 border-slate-900 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-game font-bold text-orange-600 uppercase tracking-widest">PANDUAN PEMASANGAN</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">
+          Cara Pasang APK di Android dalam 3 Langkah
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="pixel-box rounded-2xl p-6 bg-white text-center">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-game font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            1
+          </div>
+          <h4 class="font-game font-bold text-sm text-slate-900">Unduh Berkas APK</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Klik tombol <strong>Download APK</strong> untuk mengunduh berkas <code>Eco-Avengers-v1.0.apk</code> (301 MB).
+          </p>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-6 bg-white text-center">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-game font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            2
+          </div>
+          <h4 class="font-game font-bold text-sm text-slate-900">Izinkan Pemasangan</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Bila muncul peringatan keamanan, pilih <strong>"Tetap Pasang" (Install Anyway)</strong> di browser/pengelola file HP.
+          </p>
+        </div>
+
+        <div class="pixel-box rounded-2xl p-6 bg-white text-center">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-game font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+            3
+          </div>
+          <h4 class="font-game font-bold text-sm text-slate-900">Buka & Mainkan!</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Buka aplikasi Eco Avengers, masukkan kode room atau buat game baru, lalu selamatkan bumi bersama!
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Direct Download Bar Bottom -->
+      <div class="mt-12 text-center">
+        <a href="download/Eco-Avengers-v1.0.apk" download="Eco-Avengers-v1.0.apk" class="trigger-download pixel-btn-orange inline-flex items-center gap-3 px-8 py-4 rounded-xl font-game font-bold text-sm sm:text-base">
+          <i class="fa-brands fa-android text-xl"></i>
+          <span>KLIK UNTUK MENGUNDUH SEKARANG (v1.0.0)</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- CLEAN ELEGANT FOOTER (White & Orange) -->
+  <footer class="bg-white py-12 text-slate-600 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b-2 border-slate-100">
+        
+        <!-- Logo & Title -->
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo/logo-banner.png" alt="Logo" class="h-8 w-auto object-contain">
+          <span class="font-game font-bold text-slate-900 text-sm">ECO AVENGERS</span>
+        </div>
+
+        <!-- Links -->
+        <div class="flex items-center gap-6 font-bold text-slate-700">
+          <a href="#overview" class="hover:text-orange-600 transition">Tentang</a>
+          <a href="#heroes" class="hover:text-orange-600 transition">Karakter</a>
+          <a href="#gameplay" class="hover:text-orange-600 transition">Gameplay</a>
+          <a href="https://canva.link/howtoplayecoavengers" target="_blank" rel="noopener noreferrer" class="hover:text-orange-600 transition text-orange-600 flex items-center gap-1">
+            <span>How to Play</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500">
+        <div>
+          &copy; 2026 Eco Avengers. Dikembangkan oleh <strong>Aiman Wafi'i An Nawal</strong> & Tim.
+        </div>
+        <div class="flex items-center gap-1 font-bold text-orange-600">
+          <i class="fa-solid fa-leaf"></i> Murni Untuk Keperluan Bermain Pribadi
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- DOWNLOAD MODAL -->
+  <div id="downloadModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-backdrop">
+    <div class="pixel-box max-w-md w-full rounded-2xl p-6 bg-white text-center space-y-4 relative">
+      
+      <!-- Close button -->
+      <button id="closeDownloadModal" type="button" class="absolute top-4 right-4 w-7 h-7 rounded-lg border-2 border-slate-900 bg-white hover:bg-orange-50 text-slate-800 flex items-center justify-center text-xs font-bold">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 border-2 border-slate-900 flex items-center justify-center mx-auto text-xl">
+        <i class="fa-solid fa-cloud-arrow-down animate-bounce"></i>
+      </div>
+
+      <div>
+        <h3 class="font-game font-bold text-xl text-slate-900">Mengunduh APK</h3>
+        <p class="text-xs text-slate-500 mt-0.5">Eco-Avengers-v1.0.apk (301 MB)</p>
+      </div>
+
+      <!-- Animated Progress Bar -->
+      <div class="space-y-1.5 text-left">
+        <div class="flex justify-between text-[11px] text-slate-600 font-bold">
+          <span id="downloadProgressText">Menyiapkan berkas...</span>
+          <span class="font-mono text-orange-600">301 MB</span>
+        </div>
+        <div class="w-full h-3 rounded-full bg-slate-100 border-2 border-slate-900 overflow-hidden p-0.5">
+          <div id="downloadProgress" class="h-full bg-orange-500 rounded-full transition-all duration-200" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div class="p-3 rounded-xl bg-orange-50 border-2 border-orange-200 text-left text-xs space-y-1 text-slate-700">
+        <div class="font-bold text-orange-700 flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-info"></i> Petunjuk Singkat:
+        </div>
+        <p>Bila unduhan tidak muncul otomatis di browser HP kamu, silakan ketuk tautan langsung di bawah ini:</p>
+        <a href="download/Eco-Avengers-v1.0.apk" download="Eco-Avengers-v1.0.apk" class="inline-block font-bold text-orange-600 underline hover:text-orange-700 mt-1">
+          Unduh Ulang File APK &rarr;
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
