@@ -157,10 +157,10 @@ function initModals() {
   }
 
   function startDownloadFlow() {
-    const apkUrl = 'download/Eco-Avengers-v1.0.apk';
+    const apkUrl = 'download/Eco-Avengers-v1.0.zip';
     if (progressBar && progressText) {
       progressBar.style.width = '0%';
-      progressText.textContent = 'Menyiapkan berkas APK (301 MB)...';
+      progressText.textContent = 'Menyiapkan berkas (253 MB)...';
 
       let p = 0;
       const interval = setInterval(() => {
@@ -174,12 +174,12 @@ function initModals() {
           // Trigger download
           const link = document.createElement('a');
           link.href = apkUrl;
-          link.download = 'Eco-Avengers-v1.0.apk';
+          link.download = 'Eco-Avengers-v1.0.zip';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
 
-          showToast('🚀 Mengunduh Eco-Avengers-v1.0.apk...');
+          showToast('🚀 Mengunduh Eco-Avengers-v1.0.zip...');
         } else {
           progressBar.style.width = p + '%';
           progressText.textContent = `Menghubungkan... ${p}%`;

@@ -1,0 +1,14 @@
+# Large binary files (too big for GitHub)
+download/*.apk
+download/*.zip
+assets/video/*.mp4
+assets/audio/*.mp3
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
