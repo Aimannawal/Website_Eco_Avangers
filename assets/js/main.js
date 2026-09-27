@@ -3,58 +3,58 @@
 const charactersData = {
   'energy-scientist': {
     name: 'Energy Scientist',
-    title: 'Spesialis Transisi Energi',
+    title: 'Energy Transition Specialist',
     color: '#FF7A00',
     badge: 'Energy Science',
-    ability: 'Mengurangi tingkat kesulitan krisis energi sebesar 1 poin di seluruh wilayah.',
-    description: 'Pakar teknologi terbarukan yang memimpin riset fusi ramah lingkungan dan baterai skala besar untuk mempercepat dekarbonisasi global.',
+    ability: 'Reduces the difficulty level of energy crises by 1 point across all regions.',
+    description: 'A renewable technology expert leading eco-friendly fusion research and large-scale batteries to accelerate global decarbonization.',
     stats: { research: 95, diplomacy: 70, mobility: 65, crisis: 85 },
     sheetImg: 'assets/images/characters/energy-scientist.png',
-    quote: '"Energi bersih adalah kunci utama kelangsungan hidup bumi."'
+    quote: '"Clean energy is the ultimate key to Earth\'s survival."'
   },
   'ecologist': {
     name: 'Ecologist',
-    title: 'Penjaga Keanekaragaman Hayati',
+    title: 'Biodiversity Guardian',
     color: '#FF7A00',
     badge: 'Environmental Ecology',
-    ability: 'Mengurangi tingkat kesulitan degradasi lingkungan sebesar 1 poin.',
-    description: 'Pakar restorasi ekosistem hutan hujan dan terumbu karang yang melindungi keanekaragaman flora & fauna dari kepunahan massal.',
+    ability: 'Reduces the difficulty level of environmental degradation by 1 point.',
+    description: 'A rainforest and coral reef ecosystem restoration expert who protects biodiversity from mass extinction.',
     stats: { research: 90, diplomacy: 75, mobility: 80, crisis: 88 },
     sheetImg: 'assets/images/characters/ecologist.png',
-    quote: '"Setiap spesies yang diselamatkan menjaga keseimbangan ekosistem dunia."'
+    quote: '"Every species saved maintains the balance of the world\'s ecosystem."'
   },
   'environmental-activist': {
     name: 'Environmental Activist',
-    title: 'Penggerak Aksi Akar Rumput',
+    title: 'Grassroots Action Driver',
     color: '#FF7A00',
     badge: 'Grassroots Movement',
-    ability: 'Dapat melangkah dua petak sekaligus dalam satu giliran putaran.',
-    description: 'Aktivis garda terdepan dengan mobilitas tertinggi yang menyatukan komunitas dunia untuk segera mengambil aksi nyata.',
+    ability: 'Can move two spaces at once in a single turn.',
+    description: 'A frontline activist with the highest mobility who unites global communities to take immediate real action.',
     stats: { research: 70, diplomacy: 90, mobility: 100, crisis: 80 },
     sheetImg: 'assets/images/characters/environmental-activist.png',
-    quote: '"Aksi iklim tidak bisa menunggu kompromi yang lambat."'
+    quote: '"Climate action cannot wait for slow compromise."'
   },
   'policymaker': {
     name: 'Policymaker',
-    title: 'Diplomat Regulasi Global',
+    title: 'Global Regulation Diplomat',
     color: '#FF7A00',
     badge: 'Global Governance',
-    ability: 'Memberikan tambahan +1 pada hasil dadu pertama pemain kawan di sekitar.',
-    description: 'Perancang kebijakan internasional dan regulasi pajak karbon yang memberikan buff bantuan strategis bagi tim.',
+    ability: 'Grants +1 bonus to the first dice roll of nearby allied players.',
+    description: 'An international policy architect and carbon tax regulator who provides strategic support buffs for the team.',
     stats: { research: 78, diplomacy: 98, mobility: 60, crisis: 82 },
     sheetImg: 'assets/images/characters/policymaker.png',
-    quote: '"Kebijakan cerdas melindungi jutaan hektar hutan lindung."'
+    quote: '"Smart policies protect millions of hectares of protected forests."'
   },
   'climate-engineer': {
     name: 'Climate Engineer',
-    title: 'Insinyur Ketahanan Iklim',
+    title: 'Climate Resilience Engineer',
     color: '#FF7A00',
     badge: 'Climate Engineering',
-    ability: 'Mengurangi tingkat kesulitan ketahanan iklim sebesar 1 poin.',
-    description: 'Insinyur teknologi masa depan pengembang fasilitas Direct Air Capture dan penahan badai ekstrem di wilayah pesisir.',
+    ability: 'Reduces the difficulty level of climate resilience challenges by 1 point.',
+    description: 'A future-tech engineer developing Direct Air Capture facilities and extreme storm barriers in coastal regions.',
     stats: { research: 98, diplomacy: 65, mobility: 72, crisis: 92 },
     sheetImg: 'assets/images/characters/climate-engineer.png',
-    quote: '"Teknologi mutakhir harus menjadi perisai bagi alam kita."'
+    quote: '"Cutting-edge technology must be nature\'s shield."'
   }
 };
 
@@ -160,7 +160,7 @@ function initModals() {
     const apkUrl = 'download/Eco-Avengers-v1.0.zip';
     if (progressBar && progressText) {
       progressBar.style.width = '0%';
-      progressText.textContent = 'Menyiapkan berkas (253 MB)...';
+      progressText.textContent = 'Preparing file (253 MB)...';
 
       let p = 0;
       const interval = setInterval(() => {
@@ -169,7 +169,7 @@ function initModals() {
           p = 100;
           clearInterval(interval);
           progressBar.style.width = '100%';
-          progressText.textContent = 'Unduhan dimulai otomatis!';
+          progressText.textContent = 'Download started automatically!';
 
           // Trigger download
           const link = document.createElement('a');
@@ -179,10 +179,10 @@ function initModals() {
           link.click();
           document.body.removeChild(link);
 
-          showToast('🚀 Mengunduh Eco-Avengers-v1.0.zip...');
+          showToast('🚀 Downloading Eco-Avengers-v1.0.zip...');
         } else {
           progressBar.style.width = p + '%';
-          progressText.textContent = `Menghubungkan... ${p}%`;
+          progressText.textContent = `Connecting... ${p}%`;
         }
       }, 120);
     }
